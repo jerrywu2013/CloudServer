@@ -58,8 +58,15 @@ sudo nano /etc/apache2/mods-enabled/dir.conf
 </IfModule>
 ```
 
+###Restart apache
+```
+sudo service apache2 restart
+```
 
-##Apache2 change www directory
 
+
+##Change www directory
+```
 vi /etc/apache2/sites-enabled/000-default.conf
+```
 
