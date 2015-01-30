@@ -65,6 +65,17 @@ sudo apt-get install phpmyadmin
 ```
 
 ##Restart apache
+
+```
+nano /etc/apache2/apache2.conf
+```
+
+```
+ServerName localhost
+# phpMyAdmin Configuration
+Include /etc/phpmyadmin/apache.conf
+```
+
 ```
 sudo service apache2 restart
 ```
