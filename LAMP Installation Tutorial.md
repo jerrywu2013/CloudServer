@@ -78,7 +78,7 @@ vi /etc/apache2/sites-enabled/000-default.conf
 cd /etc/ssh
 vi ssh_config
 ```
-#prot 22 → port xxxxx
+prot 22 → port xxxxx
 ```
 service ssh restart
 ```
