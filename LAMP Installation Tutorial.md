@@ -58,12 +58,16 @@ sudo nano /etc/apache2/mods-enabled/dir.conf
 </IfModule>
 ```
 
+##Install phpMyAdmin
+```
+sudo apt-get update
+sudo apt-get install phpmyadmin
+```
+
 ###Restart apache
 ```
 sudo service apache2 restart
 ```
-
-
 
 ##Change www directory
 ```
