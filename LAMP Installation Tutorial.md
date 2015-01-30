@@ -1,11 +1,11 @@
 digitalocean LAMP Installation Tutorial
 
-##Step One—Install Apache
+#Step One—Install Apache
 
 sudo apt-get update
 sudo apt-get install apache2
 
-##Step Two—Install MySQL
+#Step Two—Install MySQL
 
 sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
 sudo mysql_install_db
