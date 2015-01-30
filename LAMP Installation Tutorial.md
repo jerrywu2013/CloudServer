@@ -1,5 +1,5 @@
 digitalocean LAMP Installation Tutorial
-==========
+
 ##Step One—Install Apache
 
 sudo apt-get update
@@ -10,7 +10,7 @@ sudo apt-get install apache2
 sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
 sudo mysql_install_db
 
-================================
+```
 By default, a MySQL installation has an anonymous user, allowing anyone
 to log into MySQL without having to have a user account created for
 them.  This is intended only for testing, and to make the installation
@@ -43,7 +43,7 @@ Reload privilege tables now? [Y/n] y
  ... Success!
 
 Cleaning up...
-================================
+```
 
 ##Step Three—Install PHP
 sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
