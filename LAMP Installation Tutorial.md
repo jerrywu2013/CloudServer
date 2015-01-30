@@ -64,7 +64,7 @@ sudo apt-get update
 sudo apt-get install phpmyadmin
 ```
 
-###Restart apache
+##Restart apache
 ```
 sudo service apache2 restart
 ```
