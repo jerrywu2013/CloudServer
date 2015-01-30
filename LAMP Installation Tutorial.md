@@ -73,4 +73,12 @@ sudo service apache2 restart
 ```
 vi /etc/apache2/sites-enabled/000-default.conf
 ```
-
+##Change SSH Port
+```
+cd /etc/ssh
+vi ssh_config
+```
+#prot 22 → port xxxxx
+```
+service ssh restart
+```
