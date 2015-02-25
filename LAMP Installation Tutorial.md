@@ -93,3 +93,10 @@ prot 22 → port xxxxx
 ```
 service ssh restart
 ```
+
+##Change phpmyadmin URL
+```
+vim /etc/phpmyadmin/apache.conf
+Alias /phpmyadmin /usr/share/phpmyadmin
+Alias /rename /usr/share/phpmyadmin
+```
