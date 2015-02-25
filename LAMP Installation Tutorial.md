@@ -101,3 +101,11 @@ vim /etc/phpmyadmin/apache.conf
 Alias /phpmyadmin /usr/share/phpmyadmin
 Alias /rename /usr/share/phpmyadmin
 ```
+
+#Fail2Ban
+```
+sudo apt-get install fail2ban
+cp jail.conf jail.local
+fail2ban-client status
+sudo service fail2ban start
+```
