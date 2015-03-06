@@ -1,19 +1,19 @@
 # SMTP Server Installation Tutorial
 
 #### Install Sendmail
-'''
+```
 sudo apt-get install sendmail
 ps aux |grep sendmail
-'''
+```
 #### Setting Sendmail
-'''
+```
 sudo vi /etc/php5/apache2/php.ini
 sendmail_path = /usr/sbin/sendmail -i -t
 service apache2 restart
-'''
+```
 
 #### PHP Test mail
-'''
+```
 <?php
 $now = date("Y-m-d h:i:s");
 $from_name = "Jerry";
@@ -29,4 +29,4 @@ echo "success!";
 echo "fail";
 }
 ?>
-'''
+```
