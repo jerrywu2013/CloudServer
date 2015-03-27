@@ -30,3 +30,13 @@ sudo nano /etc/apache2/sites-available/example.com.conf
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 ```
+####Copy First Virtual Host and Customize for Second Domain
+```
+sudo cp /etc/apache2/sites-available/example.com.conf /etc/apache2/sites-available/example2.com.conf
+```
+###Enable the New Virtual Host Files
+```
+sudo a2ensite example.com.conf
+sudo a2ensite example2.com.conf
+sudo service apache2 restart
+```
