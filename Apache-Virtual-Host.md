@@ -25,6 +25,7 @@ sudo nano /etc/apache2/sites-available/example.com.conf
 ```
 <VirtualHost *:80>
     ServerAdmin webmaster@localhost
+    ServerName www.example.com
     DocumentRoot /var/www/example.com/shop1
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
