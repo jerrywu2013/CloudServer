@@ -39,5 +39,5 @@ sudo cp /etc/apache2/sites-available/example.com.conf /etc/apache2/sites-availab
 ```
 sudo a2ensite example.com.conf
 sudo a2ensite example2.com.conf
-sudo service apache2 restart
+sudo service apache2 reload
 ```
