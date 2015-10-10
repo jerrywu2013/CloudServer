@@ -116,6 +116,7 @@ PermitRootLogin no
 sudo adduser xxx sudo
 sudo i
 sudo passwd root
+service ssh restart
 ```
 #UFW
 ```
