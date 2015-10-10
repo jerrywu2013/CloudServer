@@ -117,3 +117,15 @@ sudo adduser xxx sudo
 sudo i
 sudo passwd root
 ```
+#UFW
+```
+sudo apt-get ufw
+sudo ufw default deny 
+sudo ufw status
+sudo ufw enable
+sudo ufw allow ssh  
+sudo ufw allow in 8080 
+sudo ufw status numbered
+sudo ufw delete rulenumber
+sudo ufw deny out 4662  
+```
