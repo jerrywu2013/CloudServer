@@ -109,3 +109,11 @@ cp jail.conf jail.local
 fail2ban-client status
 sudo service fail2ban start
 ```
+#PermitRootLogin setting
+```
+vim /etc/ssh/sshd_config 
+PermitRootLogin no
+sudo adduser xxx sudo
+sudo i
+sudo passwd root
+```
