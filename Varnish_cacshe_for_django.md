@@ -1,8 +1,8 @@
-####Installing Vamish on ubuntu 14.04
+##Installing Vamish on ubuntu 14.04
 ```
 sudo apt-get install varnish apache2
 ```
-##Find the section begin with "Alternative 2, Configuration with VCL" Make sure it's uncommented and update the port:
+####Find the section begin with "Alternative 2, Configuration with VCL" Make sure it's uncommented and update the port:
 ```
 sudo nano /etc/default/varnish
 DAEMON_OPTS="-a :80 \
@@ -11,15 +11,15 @@ DAEMON_OPTS="-a :80 \
              -S /etc/varnish/secret \
              -s malloc,256m"
 ```
-##change Listen 80 to Listen 8080
+####change Listen 80 to Listen 8080
 ```
 sudo nano /etc/apache2/ports.conf
 ```
-## change <VirtualHost *:80> to <VirtualHost *:8080>
+####change VirtualHost 80 to VirtualHost 8080
 ```
 sudo nano /etc/apache2/sites-enabled/000-default.conf
 ```
-##restart Varnish and Apache 
+####restart Varnish and Apache 
 ```
 sudo service apache2 restart
 sudo service varnish restart
