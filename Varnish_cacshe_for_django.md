@@ -23,4 +23,5 @@ sudo nano /etc/apache2/sites-enabled/000-default.conf
 ```
 sudo service apache2 restart
 sudo service varnish restart
+varnishstat
 ```
