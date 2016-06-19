@@ -1,4 +1,4 @@
-##Installing Vamish on ubuntu 14.04
+##Installing Varnish on ubuntu 14.04
 ```
 sudo apt-get install varnish apache2
 ```
