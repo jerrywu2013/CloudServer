@@ -12,4 +12,4 @@ tar xzf solr-5.5.2.tgz
 cd solr-5.5.2/bin/
 sudo solr-5.5.2/bin/install_solr_service.sh solr-5.5.2.tgz
 ```
-http://IP:8080/solr
+http://IP:8983/solr
