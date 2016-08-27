@@ -14,3 +14,4 @@ network.host: localhost
 http.port: 9200
 script.disable_dynamic: true
 ```
+curl -X GET 'http://localhost:9200'
