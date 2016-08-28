@@ -9,7 +9,8 @@ DAEMON_OPTS="-a :6081 \
              -T localhost:6082 \
              -f /etc/varnish/default.vcl \
              -S /etc/varnish/secret \
-             -s malloc,256m"
+             -s malloc,256m
+             -t 300"
 ```
 ####change Listen 80 to Listen 8080
 ```
