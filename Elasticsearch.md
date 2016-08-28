@@ -15,3 +15,5 @@ http.port: 9200
 script.disable_dynamic: true
 ```
 curl -X GET 'http://localhost:9200'
+https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-elasticsearch-on-ubuntu-14-04
+http://tecadmin.net/install-elasticsearch-on-linux/
