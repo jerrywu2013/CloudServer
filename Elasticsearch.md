@@ -13,7 +13,7 @@ network.host: localhost
 ```
 ```
 vi /etc/rc.local
-u - lab -c "/home/lab/es/elasticsearch-2.3.3/bin/elasticsearch -d"
+su - lab -c "/home/lab/es/elasticsearch-2.3.3/bin/elasticsearch -d"
 cd /home/lab/es/elasticsearch-2.3.3/bin
 ./elasticsearch
 ```
