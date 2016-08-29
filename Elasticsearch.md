@@ -11,7 +11,9 @@ vim config/elasticsearch.yml
 network.host: localhost
 ```
 curl -X GET 'http://localhost:9200'
+
 curl -X POST 'http://localhost:9200/tutorial/helloworld/1' -d '{ "message": "Hello World!" }'
+
 curl -X GET 'http://localhost:9200/tutorial/helloworld/1'
 ```
 #cluster.name: Admin_Cluster
