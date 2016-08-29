@@ -11,6 +11,10 @@ vim config/elasticsearch.yml
 ```
 network.host: localhost
 ```
+```
+vi /etc/rc.local
+u - lab -c "/home/lab/es/elasticsearch-2.3.3/bin/elasticsearch -d"
+```
 curl -X GET 'http://localhost:9200'
 
 curl -X POST 'http://localhost:9200/tutorial/helloworld/1' -d '{ "message": "Hello World!" }'
