@@ -8,13 +8,17 @@ tar xzf elasticsearch-2.3.1.tar.gz
 vim config/elasticsearch.yml
 ```
 ```
-cluster.name: Admin_Cluster
-node.name: "Jerry DataCenter"
 network.host: localhost
-http.port: 9200
-script.disable_dynamic: true
 ```
 curl -X GET 'http://localhost:9200'
-
+```
+#cluster.name: Admin_Cluster
+#node.name: "Jerry DataCenter"
+#http.port: 9200
+#script.disable_dynamic: true
+```
 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-elasticsearch-on-ubuntu-14-04
+
 http://tecadmin.net/install-elasticsearch-on-linux/
+
+http://javacore.cn/page/146/elasticsearch-233-ubuntu-under-the-installation-configuration-boot.html
