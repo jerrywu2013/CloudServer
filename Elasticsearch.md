@@ -1,10 +1,11 @@
-#### Install Elasticsearch on ubuntu14.04
+#### Install Elasticsearch 2.3.3 on ubuntu14.04
 ```
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install oracle-java8-installer
-wget https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-2.3.1.tar.gz
-tar xzf elasticsearch-2.3.1.tar.gz
+wget  https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/zip/elasticsearch/2.3.3/elasticsearch-2.3.3.zip
+unzip  elasticsearch-2.3.3.zip
+cd /elasticsearch-2.3.3
 vim config/elasticsearch.yml
 ```
 ```
