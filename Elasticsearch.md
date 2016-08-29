@@ -27,3 +27,5 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-el
 http://tecadmin.net/install-elasticsearch-on-linux/
 
 http://javacore.cn/page/146/elasticsearch-233-ubuntu-under-the-installation-configuration-boot.html
+
+https://github.com/rippleblue/Elasticsearch_Logstash_Kibana/blob/master/ES2.3_with_Python(Push%20Data).md
