@@ -2,7 +2,7 @@
 ```
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
-sudo apt-get install oracle-java8-installer
+sudo apt-get -y install oracle-java8-installer
 wget  https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/zip/elasticsearch/2.3.3/elasticsearch-2.3.3.zip
 unzip  elasticsearch-2.3.3.zip
 cd /elasticsearch-2.3.3
