@@ -2,6 +2,6 @@
 ```
 sudo apt-get update
 sudo apt-get install python3-pip
-pip install keras
-pip install tensorflow
+sudo pip3 install keras
+sudo pip3 install tensorflow
 ```
