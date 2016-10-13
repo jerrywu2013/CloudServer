@@ -3,6 +3,7 @@
 wget https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh
 bash Anaconda3-4.2.0-Linux-x86_64.sh
 sudo apt install -y python-dev python-pip python-nose gcc g++ git gfortran vim
+sudo apt install -y libopenblas-dev liblapack-dev libatlas-base-dev
 sudo pip3 install keras
 cd /anaconda3/bin
 ./conda install tensorflow
