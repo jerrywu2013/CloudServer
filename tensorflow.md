@@ -7,5 +7,9 @@ cd /anaconda3/bin
 ./conda install tensorflow
 ./jupyter-notebook --ip 0.0.0.0
 ```
+```
+from keras.models import Sequential
+Using TensorFlow backend.
+```
 http://127.0.0.1:8976/
 
