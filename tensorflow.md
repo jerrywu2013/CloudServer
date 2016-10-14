@@ -6,6 +6,12 @@ sudo apt install -y python-dev python-pip python-nose gcc g++ git gfortran vim
 sudo apt install -y libopenblas-dev liblapack-dev libatlas-base-dev
 sudo pip3 install keras
 sudo pip install keras
+
+sudo pip install ipython notebook
+ipython notebook
+import keras
+```
+```
 cd /anaconda3/bin
 anaconda search -t conda keras
 ./conda install -c KEHANG keras=1.0.8
