@@ -9,7 +9,7 @@ cd /elasticsearch-2.3.3
 vim config/elasticsearch.yml
 ```
 ```
-network.host: localhost
+network.host: 0.0.0.0
 ```
 ```
 cd /home/lab/es/elasticsearch-2.3.3/bin
