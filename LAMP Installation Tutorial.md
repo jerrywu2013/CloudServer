@@ -130,3 +130,7 @@ sudo ufw status numbered
 sudo ufw delete rulenumber
 sudo ufw deny out 4662  
 ```
+Close root
+```
+sudo passwd -l root
+```
