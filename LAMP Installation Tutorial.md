@@ -1,5 +1,23 @@
 #Digitalocean LAMP Installation Tutorial
 
+```
+ /etc/network/interfaces
+
+#iface eth0 inet dhcp 
+iface eth0 inet static 
+address 10.10.130.51
+netmask 255.255.255.0
+gateway 10.10.130.254
+
+sudo ifdown eth0
+sudo ifup eth0 
+
+/etc/resolv.conf
+
+nameserver 8.8.8.8 
+nameserver 8.8.4.4
+```
+
 ##Step One—Install Apache
 ```
 sudo apt-get update
