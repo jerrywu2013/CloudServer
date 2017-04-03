@@ -151,4 +151,5 @@ sudo ufw deny out 4662
 Close root
 ```
 sudo passwd -l root
+sudo visudo
 ```
