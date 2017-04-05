@@ -26,7 +26,7 @@ cd /home/lab/es/elasticsearch-5.1.2/bin
 ```
 ```
 vi /etc/rc.local
-su - lab -c "/home/lab/es/elasticsearch-2.3.3/bin/elasticsearch -d"
+su - jerry -c "/home/jerry/elasticsearch-5.1.2/bin/elasticsearch -d"
 ```
 curl -X GET 'http://IP:9200'
 
