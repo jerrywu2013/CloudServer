@@ -1,4 +1,16 @@
-#### Install Elasticsearch 2.3.3 on ubuntu14.04
+#### Install Elasticsearch 5.1.1 on ubuntu14.04
+
+#Add a new user
+```
+sudo adduser jerry
+sudo visudo
+```
+```
+# User privilege specification
+root    ALL=(ALL:ALL) ALL
+jerry ALL=(ALL:ALL) ALL
+```
+#Installing elasticsearch
 ```
 sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:webupd8team/java
