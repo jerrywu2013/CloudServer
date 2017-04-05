@@ -1,14 +1,14 @@
-### Install Elasticsearch 5.1.1 on ubuntu14.04
+### Install Elasticsearch 5.3.0 on ubuntu14.04
 
 ##### Add a new user
 ```
-sudo adduser jerry
+sudo adduser esjerry
 sudo visudo
 ```
 ```
 # User privilege specification
 root    ALL=(ALL:ALL) ALL
-jerry ALL=(ALL:ALL) ALL
+esjerry ALL=(ALL:ALL) ALL
 ```
 ###### Installing elasticsearch
 ```
@@ -16,9 +16,9 @@ sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get -y install oracle-java8-installer
-curl -L -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.1.2.tar.gz
-tar -xvf elasticsearch-5.1.2.tar.gz
-cd elasticsearch-5.1.2
+curl -L -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.3.0.tar.gz
+tar -xvf elasticsearch-5.3.0.tar.gz
+cd elasticsearch-5.3.0
 vim config/elasticsearch.yml
 ```
 ```
@@ -33,12 +33,12 @@ network.host: 0.0.0.0
 discovery.zen.minimum_master_nodes: 2
 ```
 ```
-cd /home/lab/es/elasticsearch-5.1.2/bin
+cd /home/lab/es/elasticsearch-5.3.0/bin
 ./elasticsearch
 ```
 ```
 vi /etc/rc.local
-su - jerry -c "/home/jerry/elasticsearch-5.1.2/bin/elasticsearch -d"
+su - esjerry -c "/home/jerry/elasticsearch-5.3.0/bin/elasticsearch -d"
 ```
 curl -X GET 'http://IP:9200'
 
