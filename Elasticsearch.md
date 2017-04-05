@@ -10,25 +10,29 @@ cd elasticsearch-5.1.2
 vim config/elasticsearch.yml
 ```
 ```
-network.host: 127.0.0.1
 cluster.name: Admin_Cluster
-node.name: "Jerry DataCenter"
+node.name: Jerry DataCenter
+node.master: true
+node.data: true
+transport.host: localhost
+transport.tcp.port: 9300
 http.port: 9200
-script.disable_dynamic: true
+network.host: 0.0.0.0
+discovery.zen.minimum_master_nodes: 2
 ```
 ```
-cd /home/lab/es/elasticsearch-2.3.3/bin
+cd /home/lab/es/elasticsearch-5.1.2/bin
 ./elasticsearch
 ```
 ```
 vi /etc/rc.local
 su - lab -c "/home/lab/es/elasticsearch-2.3.3/bin/elasticsearch -d"
 ```
-curl -X GET 'http://localhost:9200'
+curl -X GET 'http://IP:9200'
 
-curl -X POST 'http://localhost:9200/tutorial/helloworld/1' -d '{ "message": "Hello World!" }'
+curl -X POST 'http://IP:9200/tutorial/helloworld/1' -d '{ "message": "Hello World!" }'
 
-curl -X GET 'http://localhost:9200/tutorial/helloworld/1'
+curl -X GET 'http://IP:9200/tutorial/helloworld/1'
 ```
 
 ```
