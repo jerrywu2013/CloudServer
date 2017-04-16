@@ -30,7 +30,6 @@ transport.host: localhost
 transport.tcp.port: 9300
 http.port: 9200
 network.host: 0.0.0.0
-discovery.zen.minimum_master_nodes: 2
 ```
 ```
 cd /home/lab/es/elasticsearch-5.3.0/bin
