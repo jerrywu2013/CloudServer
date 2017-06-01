@@ -48,7 +48,8 @@ curl -X GET 'http://IP:9200/tutorial/helloworld/1'
 
 Stop ROOT
 ```
-sudo passwd -l root
+sudo nano /etc/ssh/sshd_config
+PermitRootLogin no
 ```
 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-elasticsearch-on-ubuntu-14-04
 
