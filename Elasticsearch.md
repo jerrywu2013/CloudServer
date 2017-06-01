@@ -44,8 +44,11 @@ curl -X GET 'http://IP:9200'
 curl -X POST 'http://IP:9200/tutorial/helloworld/1' -d '{ "message": "Hello World!" }'
 
 curl -X GET 'http://IP:9200/tutorial/helloworld/1'
-```
 
+
+Stop ROOT
+```
+sudo passwd -l root
 ```
 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-elasticsearch-on-ubuntu-14-04
 
