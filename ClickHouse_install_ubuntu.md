@@ -1,4 +1,4 @@
-###Install ClickHouse on Ubuntu14.04
+### Install ClickHouse on Ubuntu14.04
 
 ```
 nano /etc/apt/sources.list
@@ -12,7 +12,7 @@ apt-get update
 apt-get install clickhouse-server-common clickhouse-client -y
 service clickhouse-server start
 ```
-###Getting Started 
+### Getting Started 
 ```
 clickhouse-client 
 ```
