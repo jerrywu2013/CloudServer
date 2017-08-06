@@ -167,3 +167,6 @@ SELECT count(*) FROM ontime;
 ```
 SELECT DayOfWeek, count(*) AS c FROM ontime WHERE Year >= 1987 AND Year <= 1997 GROUP BY DayOfWeek ORDER BY c DESC; 
 ```
+```
+SELECT Origin, count(*) AS c FROM ontime WHERE DepDelay>10 AND Year >= 1987 AND Year <= 1997 GROUP BY Origin ORDER BY c DESC LIMIT 10
+```
