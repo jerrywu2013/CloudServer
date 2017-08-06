@@ -161,3 +161,9 @@ nano inputdata.sh
 for i in *.zip; do echo $i; unzip -cq $i '*.csv' | sed 's/\.00//g' | clickhouse-client  --query="INSERT INTO ontime FORMAT CSVWithNames"; done
 ```
 ### Select
+```
+SELECT count(*) FROM ontime;
+```
+```
+SELECT DayOfWeek, count(*) AS c FROM ontime WHERE Year >= 1987 AND Year <= 1997 GROUP BY DayOfWeek ORDER BY c DESC; 
+```
