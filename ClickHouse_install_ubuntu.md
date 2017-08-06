@@ -152,7 +152,12 @@ CREATE TABLE ontime
     Div5LongestGTime String, 
     Div5WheelsOff String, 
     Div5TailNum String
-) ENGINE = MergeTree(FlightDate, (Year, FlightDate), 8192)
+) ENGINE = MergeTree(FlightDate, (Year, FlightDate), 8192);
 ```
-
-
+```
+nano inputdata.sh
+```
+```
+for i in *.zip; do echo $i; unzip -cq $i '*.csv' | sed 's/\.00//g' | clickhouse-client  --query="INSERT INTO ontime FORMAT CSVWithNames"; done
+```
+### Select
