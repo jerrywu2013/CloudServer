@@ -36,7 +36,7 @@ done
 ```
 sh c_test.sh
 ```
-###
+### Reference: http://www.cnblogs.com/gomysql/p/6655553.html
 ```
 clickhouse-client -m
 ```
