@@ -1,6 +1,6 @@
 #### Install OpenCV 3 in Ubuntu14.04
 ```
-pip3 install numpy
+sudo pip3 install numpy
 ```
 ```
 $ sudo apt-get update 
