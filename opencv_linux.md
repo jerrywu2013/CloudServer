@@ -1,4 +1,7 @@
-#### Install OpenCV 3.0.0 in Ubuntu14.04
+#### Install OpenCV 3 in Ubuntu14.04
+```
+pip3 install numpy
+```
 ```
 $ sudo apt-get update 
 $ sudo apt-get upgrade 
@@ -10,7 +13,7 @@ $ sudo apt-get install libatlas-base-dev gfortran
 $ cd ~ 
 $ git clone   https://github.com/Itseez/opencv.git 
 $ cd opencv 
-$ git checkout 3.0.0 
+$ git checkout 3.1.0 
 $ cd ~/opencv 
 $ mkdir build 
 $ cd build 
