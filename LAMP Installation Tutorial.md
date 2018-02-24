@@ -154,3 +154,7 @@ Close root
 sudo passwd -l root
 sudo visudo
 ```
+# check port
+```
+sudo netstat -lpn |grep 5900
+```
