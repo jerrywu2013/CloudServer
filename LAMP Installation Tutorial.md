@@ -126,6 +126,7 @@ sudo apt-get install fail2ban
 cp jail.conf jail.local
 fail2ban-client status
 sudo service fail2ban start
+http://www.vixual.net/blog/archives/252
 ```
 #PermitRootLogin setting
 ```
