@@ -1,4 +1,4 @@
-#Digitalocean LAMP Installation Tutorial
+# Digitalocean LAMP Installation Tutorial
 
 ```
  /etc/network/interfaces
@@ -18,12 +18,12 @@ nameserver 8.8.8.8
 nameserver 8.8.4.4
 ```
 
-##Step One—Install Apache
+## Step One—Install Apache
 ```
 sudo apt-get update
 sudo apt-get install apache2
 ```
-##Step Two—Install MySQL
+## Step Two—Install MySQL
 ```
 sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
 sudo mysql_install_db
@@ -63,7 +63,7 @@ Reload privilege tables now? [Y/n] y
 Cleaning up...
 ```
 
-##Step Three—Install PHP
+## Step Three—Install PHP
 ```
 sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
 sudo nano /etc/apache2/mods-enabled/dir.conf
@@ -76,13 +76,13 @@ sudo nano /etc/apache2/mods-enabled/dir.conf
 </IfModule>
 ```
 
-##Install phpMyAdmin
+## Install phpMyAdmin
 ```
 sudo apt-get update
 sudo apt-get install phpmyadmin
 ```
 
-##Restart apache
+## Restart apache
 
 ```
 nano /etc/apache2/apache2.conf
@@ -98,11 +98,11 @@ Include /etc/phpmyadmin/apache.conf
 sudo service apache2 restart
 ```
 
-##Change www directory
+## Change www directory
 ```
 vi /etc/apache2/sites-enabled/000-default.conf
 ```
-##Change SSH Port
+## Change SSH Port
 ```
 cd /etc/ssh
 vi ssh_config
@@ -113,22 +113,22 @@ prot 22 → port xxxxx
 service ssh restart
 ```
 
-##Change phpmyadmin URL
+## Change phpmyadmin URL
 ```
 vim /etc/phpmyadmin/apache.conf
 Alias /phpmyadmin /usr/share/phpmyadmin
 Alias /rename /usr/share/phpmyadmin
 ```
 
-#Fail2Ban
+# Fail2Ban
 ```
 sudo apt-get install fail2ban
 cp jail.conf jail.local
 fail2ban-client status
 sudo service fail2ban start
-http://www.vixual.net/blog/archives/252
 ```
-#PermitRootLogin setting
+http://www.vixual.net/blog/archives/252
+# PermitRootLogin setting
 ```
 vim /etc/ssh/sshd_config 
 PermitRootLogin no
@@ -137,7 +137,7 @@ sudo i
 sudo passwd root
 service ssh restart
 ```
-#UFW
+# UFW
 ```
 sudo apt-get ufw
 sudo ufw default deny 
